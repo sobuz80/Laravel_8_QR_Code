@@ -1,0 +1,20 @@
+Generate 4 digit unique random number in laravel
+
+<?php
+   
+namespace App\Http\Controllers;
+   
+class TestController extends Controller
+{
+    /**
+     * Write code on Method
+     *
+     * @return response()
+     */
+    public function index()
+    {
+        $randomNumber = random_int(1000, 9999);
+   
+        dd($randomNumber);
+    }
+}
